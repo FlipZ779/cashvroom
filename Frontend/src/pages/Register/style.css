@@ -1,0 +1,110 @@
+
+
+.Register-main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Register-container {
+  height: 60vh;
+  width: 50vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+#logo {
+  position: fixed;
+  height: 30vh;
+  top: 0%;
+}
+
+.Register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 1;
+}
+
+.Register-container h1 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 2rem;
+}
+
+.Register-container p, a {
+  font-size: small;
+  color: black;
+  text-decoration: none;
+}
+
+.Register-container a:hover {
+  color: #006400;
+}
+
+input {
+  width: 15vw;
+  height: 4.5vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff2b2b;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 43, 43, 0.4);
+}
+
+button {
+  width: 15vw;
+  height: 6vh;
+  background: #5ca143;
+  background: linear-gradient(
+    90deg,
+    rgba(92, 161, 67, 1) 18%,
+    rgba(0, 100, 0, 1) 100%
+  );
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 100;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px #006400;
+}
+
+.Register-container img {
+  position: absolute;
+  height: 35vh;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#fiat {
+  bottom: -10%;
+  left: -5%;
+}
+
+#gol {
+  height: 40vh;
+  bottom: -15%;
+  right: -15%;
+}
